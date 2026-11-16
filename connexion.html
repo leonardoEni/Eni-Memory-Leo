@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>connexion</title>
+</head>
+<body>
+    <h1>ENI -<strong>MEMORY</strong>- Connexion</h1>
+
+        <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="inscription.html">S'inscrire</a></li>
+            <li><a href="connexion.html">Se connecter</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="jouer.html">Jouer</a></li>
+        </ul>
+    </nav>
+
+    <section>
+
+            <article id="connexion-form">
+
+                <fieldset>
+                    <h2>Connectez-vous.</h2>
+
+                    <form action="" method="get">
+                        <label for="email">Entrez votre email : </label>
+                        <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="votre email"
+                        title="Saisissez votre adresse email"
+                        />
+                        <br/>
+        
+                        <label for="motdePasse">Mot de passe :</label>
+                        <input
+                        type="password"
+                        id="motdePasse"
+                        name="motdePasse"
+                        placeholder="votre mot de passe"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="votre mot de passe"
+                        />
+                        
+                        <br/>
+                        <input type="submit" value="Se connecter"/>
+                        <input type="reset"  value="Annuler"/>
+                    </form>
+
+
+                </fieldset>
+
+
+
+            </article>
+
+
+        </section>
+    
+</body>
+</html>
