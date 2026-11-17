@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <title>Profil</title>
 </head>
+
+
 <body>
     <h1>ENI -<strong>MEMORY</strong>- Profil</h1>
 
@@ -19,106 +21,106 @@
         </ul>
     </nav>
 
+    <section id="blocCentralProfil">
 
-    <section>
+        <article id="inscription-form">
 
-            <article id="inscription-form">
-
-                <fieldset>
-                    <h2>Profil</h2>
-                    <img src="ressources\question.svg" alt="point d'interrogation">
-
+            <fieldset>
+                <h2>Profil</h2>
+                <div id="questionProfil">
+                    <img id="logoInterrogation" src="ressources\question.svg" alt="point d'interrogation">
+                </div>
+                
+                <form action="" method="post">
+                    <label for="nom">Nom d'utilisateur :</label>
+                    <input
+                    type="text"
+                    id="nom"
+                    name="nom"
+                    autofocus
+                    required
+                    placeholder="ddd"
+                    pattern="[A-Za-Z]{2,}"
+                    title="Saisissez votre nom (2 caractères min.)"/>
+                    <br/>
                     
-                    <form action="" method="post">
-                        <label for="nom">Nom d'utilisateur :</label>
-                        <input
-                        type="text"
-                        id="nom"
-                        name="nom"
-                        autofocus
-                        required
-                        placeholder="ddd"
-                        pattern="[A-Za-Z]{2,}"
-                        title="Saisissez votre nom (2 caractères min.)"/>
-                        <br/>
-                       
-                        <label for="email">Email : </label>
-                        <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="dd@dd.fr"
-                        title="Saisissez votre adresse email"
-                        />
-                        <br/>
+                    <label for="email">Email : </label>
+                    <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="dd@dd.fr"
+                    title="Saisissez votre adresse email"
+                    />
+                    <br/>
 
-                        <label for="select">Choix du Memory :</label>
-                        <select name="select" id="select">
-                            <option value="valeur1">Fruits et legumes</option>
-                            <option value="valeur2" selected>Lettres</option>
-                            <option value="valeur3">autre valeur</option>
-                            <option value="valeur4">valeur 4</option>
-                        </select>
+                    <label for="select">Choix du Memory :</label>
+                    <select name="select" id="select">
+                        <option value="valeur1">Fruits et legumes</option>
+                        <option value="valeur2" selected>Lettres</option>
+                        <option value="valeur3">autre valeur</option>
+                        <option value="valeur4">valeur 4</option>
+                    </select>
 
-                        <br />
+                    <br />
 
 
+                    <div id="parentImage">
+                     <image id="imageMemory" src="ressources\memory-legume\memory_detail.png"  alt="Image du tebleau à choisir"/>
+                    </div>
+                    
+                    <br />
 
-                        <image src="ressources\memory-legume\memory_detail.png" alt="Image du tebleau à choisir"/>
+                    <label for="nombre">Taille du Memory :</label>
+                    <select name="select" id="select">
+                        <option value="valeur1">4 * 3</option>
+                        <option value="valeur2" selected>Autre option2</option>
+                        <option value="valeur3">Autre option3</option>
+                        <option value="valeur4">Autre option4</option>
+                    </select>
 
-                        
-                        <br />
+                    <br />
+                    <br />
 
-                        <label for="nombre">Taille du Memory :</label>
-                        <select name="select" id="select">
-                            <option value="valeur1">4 * 3</option>
-                            <option value="valeur2" selected>Autre option2</option>
-                            <option value="valeur3">Autre option3</option>
-                            <option value="valeur4">Autre option4</option>
-                        </select>
+                    <input type="submit" value="Enregistrez Option"/>
+                    
+                    
+                </form>
 
-                        <br />
-                        <br />
+                <p><strong>Derniers Scores :</strong></p>
 
-                        <input type="submit" value="Enregistrez Option"/>
-                        
-                        
-                    </form>
+                <table>
+                    <thead>
+                        <tr>
+                        <th scope="col">Pseudo</th>
+                        <th scope="col">Score</th>
+                        <th scope="col">Taille</th>
+                        <th scope="col">Choix Memory</th>
+                        <th scope="col">Date</th>
+                        </tr>
+                    </thead>
 
-                    <p><strong>Derniers Scores :</strong></p>
+                    <tbody>
+                        <tr>
+                        <td>dd@dd.fr</td>
+                        <td>11</td>
+                        <td>4par3</td>
+                        <td>Légumes</td>
+                        <td>14/12/2022</td>
+                        </tr>
 
-                    <table>
-                        <thead>
-                            <tr>
-                            <th scope="col">Pseudo</th>
-                            <th scope="col">Score</th>
-                            <th scope="col">Taille</th>
-                            <th scope="col">Choix Memory</th>
-                            <th scope="col">Date</th>
-                            </tr>
-                        </thead>
+                    </tbody>
 
-                        <tbody>
-                            <tr>
-                            <td>dd@dd.fr</td>
-                            <td>11</td>
-                            <td>4par3</td>
-                            <td>Légumes</td>
-                            <td>14/12/2022</td>
-                            </tr>
+                </table>
 
-                        </tbody>
-
-                    </table>
-
-                </fieldset>
+            </fieldset>
 
 
 
-            </article>
+        </article>
 
 
-        </section>
+    </section>
     
 </body>
 </html>
