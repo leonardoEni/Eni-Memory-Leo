@@ -9,7 +9,7 @@
 <body>
     <h1>ENI -<strong>MEMORY</strong>- Profil</h1>
 
-        <nav>
+    <nav>
         <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="inscription.html">S'inscrire</a></li>
@@ -19,12 +19,15 @@
         </ul>
     </nav>
 
+
     <section>
 
             <article id="inscription-form">
 
                 <fieldset>
                     <h2>Profil</h2>
+                    <img src="ressources\question.svg" alt="point d'interrogation">
+
                     
                     <form action="" method="post">
                         <label for="nom">Nom d'utilisateur :</label>
@@ -34,7 +37,7 @@
                         name="nom"
                         autofocus
                         required
-                        placeholder="3 caractères minimum"
+                        placeholder="ddd"
                         pattern="[A-Za-Z]{2,}"
                         title="Saisissez votre nom (2 caractères min.)"/>
                         <br/>
@@ -44,44 +47,69 @@
                         type="email"
                         id="email"
                         name="email"
-                        placeholder="votre email"
+                        placeholder="dd@dd.fr"
                         title="Saisissez votre adresse email"
                         />
                         <br/>
 
                         <label for="select">Choix du Memory :</label>
                         <select name="select" id="select">
-                        <option value="valeur1">Fruits et legumes</option>
-                        <option value="valeur2" selected>Lettres</option>
-                        <option value="valeur3">autre valeu</option>
-                        <option value="valeur4">valeur 4</option>
+                            <option value="valeur1">Fruits et legumes</option>
+                            <option value="valeur2" selected>Lettres</option>
+                            <option value="valeur3">autre valeur</option>
+                            <option value="valeur4">valeur 4</option>
                         </select>
 
                         <br />
 
 
 
-                        <image src="ressources\animauxAnimes\memory_detail_animaux_animes.png" alt="Image du tebleau à choisir"/>
+                        <image src="ressources\memory-legume\memory_detail.png" alt="Image du tebleau à choisir"/>
 
                         
                         <br />
 
                         <label for="nombre">Taille du Memory :</label>
-                        <input
-                        type="number"
-                        name="nombre"
-                        id="nombre"
-                        min="2"
-                        max="12"
-                        step="2"
-                        />
+                        <select name="select" id="select">
+                            <option value="valeur1">4 * 3</option>
+                            <option value="valeur2" selected>Autre option2</option>
+                            <option value="valeur3">Autre option3</option>
+                            <option value="valeur4">Autre option4</option>
+                        </select>
 
-                        <br/>
-                        
+                        <br />
+                        <br />
+
                         <input type="submit" value="Enregistrez Option"/>
                         
                         
                     </form>
+
+                    <p><strong>Derniers Scores :</strong></p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                            <th scope="col">Pseudo</th>
+                            <th scope="col">Score</th>
+                            <th scope="col">Taille</th>
+                            <th scope="col">Choix Memory</th>
+                            <th scope="col">Date</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                            <td>dd@dd.fr</td>
+                            <td>11</td>
+                            <td>4par3</td>
+                            <td>Légumes</td>
+                            <td>14/12/2022</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
 
                 </fieldset>
 
