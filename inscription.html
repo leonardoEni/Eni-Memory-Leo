@@ -21,68 +21,72 @@
         </ul>
     </nav>
 
-    <section>
+    <section id="blocCentralSInscrire">
 
         <article id="inscription-form">
 
-            <fieldset>
-                <h2>Inscrivez-vous.</h2>
+            
+            <h2>Inscrivez-vous.</h2>
                 
-                <form action="" method="post">
-                    <label for="nom">Nom d'utilisateur :</label>
-                    <input
-                    type="text"
-                    id="nom"
-                    name="nom"
-                    autofocus
-                    required
-                    placeholder="3 caractères minimum"
-                    pattern="[A-Za-Z]{2,}"
-                    title="Saisissez votre nom (2 caractères min.)"/>
-                    <p id="interactiveP">Choisissez un pseudo contenant au moins 3 caracteres.</p>
-                    <br/>
+            <form action="" method="post">
+                <label for="nom">Nom d'utilisateur :</label><br>
+                <input
+                type="text"
+                id="texte"
+                name="nom"
+                autofocus
+                required
+                placeholder="3 caractères minimum"
+                size = 65px;
+                pattern="[A-Za-Z]{2,}"
+                title="Saisissez votre nom (2 caractères min.)"  />
+                <p id="interactiveP">Choisissez un pseudo contenant au moins 3 caracteres.</p>
+              
+                <br/>
 
-                    <label for="email">Entrez votre email : </label>
-                    <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="votre email"
-                    title="Saisissez votre adresse email"
-                    />
-                    <br/>
+                <label for="email">Entrez votre email : </label><br>
+                <input
+                type="email"
+                id="texte"
+                name="email"
+                placeholder="votre email"
+                size = 65px;
+                title="Saisissez votre adresse email"
+                />
+                <br/>
 
-    
-                    <label for="motdePasse">Mot de passe :</label>
-                    <input
-                    type="password"
-                    id="motdePasse"
-                    name="motdePasse"
-                    placeholder="votre mot de passe"
-                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                    title="votre mot de passe"
-                    />
-                    <p id="inscription-text">Au moins un symbole, un chiffre, ainsique 6 caractères minimum.</p>
-                    <br/>
-    
-                    <label for="motdePasse">Confirmez le mot de passe :</label>
-                    <input
-                    type="password"
-                    id="motdePasse"
-                    name="motdePasse"
-                    placeholder="Confirmez le mot de passe"
-                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                    title="votre mot de passe"
-                    />
-                    <br/>
-                    <br/>
-                    
+
+                <label for="motdePasse">Mot de passe :</label><br>
+                <input
+                type="password"
+                id="texte"
+                name="motdePasse"
+                placeholder="votre mot de passe"
+                size = 65px;
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="votre mot de passe"
+                />
+                <p id="inscription-text">Au moins un symbole, un chiffre, ainsique 6 caractères minimum.</p>
+                <br/>
+
+                <label for="motdePasse">Confirmez le mot de passe :</label><br>
+                <input
+                type="password"
+                id="texte"
+                name="motdePasse"
+                placeholder="Confirmez le mot de passe"
+                size = 65px;
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="votre mot de passe"
+                />
+                <br/>
+                <div id="buttons">
                     <input type="submit" value="Création du compte"/>
                     <input type="reset"  value="Annuler"/>
-                    
-                </form>
+                </div>
+            </form>
 
-            </fieldset>
+            
 
 
 

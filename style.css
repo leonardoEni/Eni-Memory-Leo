@@ -110,6 +110,69 @@ p{
     /*background-color: rgb(89, 15, 207);*/
 }
 
+
+/* carré noir S'inscrire */
+
+h2{
+    Display: flex; 
+    justify-content: center;
+
+    
+}
+
+#buttons{
+    Display: flex; 
+    justify-content: space-around;
+    margin-top: 15px;
+
+
+}
+
+#blocCentralSInscrire{
+  
+    align-items: center; 
+    
+    background-color:black;
+    width: 500px;
+    height: 480px;
+    margin: 0;
+    padding: 30px;
+     
+    border-radius: 30px;
+}
+
+label{
+    color:white;
+}
+
+#texte{
+ color: white;
+    margin-top: 5px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #d3d3da;
+  outline: none;
+}
+
+input{
+    
+    margin-bottom: 10px;
+     
+
+
+}
+
+p{
+    margin-top: 0;
+ 
+    
+
+}
+
+
+
+
+
 /* carré noir Profil */
 
 #blocCentralProfil{
