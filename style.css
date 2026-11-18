@@ -21,7 +21,8 @@ h1{
     
 }
 
-/* MENU */
+/* -------- MENU----------*/
+
 nav{
     width: 100%;
     margin-bottom: 10px; 
@@ -55,7 +56,7 @@ a{
 }
 
 
-
+/* -------- ACCUEIL----------*/
 /* carré noir Accueil*/
 
 #blocCentral{
@@ -110,7 +111,7 @@ p{
     /*background-color: rgb(89, 15, 207);*/
 }
 
-
+/* -------- INSCRIPTION ----------*/
 /* carré noir S'inscrire */
 
 h2{
@@ -123,7 +124,7 @@ h2{
 #buttons{
     Display: flex; 
     justify-content: space-around;
-    margin-top: 15px;
+    margin-top: 50px;
 
 
 }
@@ -173,6 +174,7 @@ p{
 
 
 
+/* -------- PROFIL----------*/
 /* carré noir Profil */
 
 #blocCentralProfil{
@@ -205,4 +207,20 @@ p{
      height: auto;
      border: solid, rgb(255, 255, 255), 2px;
      border-radius: 50%;
+}
+
+
+/* -------- JOUER ----------*/
+
+#plateauLegumes{
+    width: 400px;
+    height: 400px;
+    border: solid, 15px, red;
+    background-color: aliceblue;
+
+}
+
+#plateauLegumes td{
+    background-color: rgb(110, 109, 112);
+    border: solid, 1px, rgb(231, 12, 12);
 }
